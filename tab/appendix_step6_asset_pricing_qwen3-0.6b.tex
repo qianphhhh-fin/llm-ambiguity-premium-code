@@ -1,0 +1,54 @@
+
+\begin{landscape}
+\begin{table}[p]
+\begin{adjustbox}{width=\linewidth, center} 
+\begin{threeparttable}
+\caption{Robustness Check: Asset Pricing Tests using QWEN3-0.6B}
+\label{tab:pricing_qwen3_0.6b_CMC}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{lccccccccccc}
+\toprule
+ & \multicolumn{11}{c}{\textbf{Augmented Models (Factor + Narrative)}} \\
+\cmidrule(lr){2-12}
+Risk Premia ($\lambda$) & FF3 & HXZ5 & DHS & Barillas & CAPM & Carhart4 & FF5 & FF6 & HML-Devil & ICR & Liq \\
+\midrule
+\textbf{Narrative} & -11.70 (-0.79) & -8.06 (-0.52) & 0.84 (0.06) & -3.83 (-0.26) & -10.15 (-0.67) & -11.92 (-0.80) & -3.99 (-0.27) & -2.55 (-0.18) & -9.68 (-0.67) & -4.93 (-0.35) & 7.71 (0.52)  \\
+AGG-LIQ &  &  &  &  &  &  &  &  &  &  & -0.53 (-0.75)  \\
+CMA &  &  &  &  &  &  & -0.44** (-2.21) & -0.51** (-2.57) &  &  &   \\
+FIN &  &  & 0.05 (0.30) &  &  &  &  &  &  &  &   \\
+HML & -0.09 (-0.68) &  &  &  &  & -0.09 (-0.66) & -0.26* (-1.74) & -0.29** (-1.97) &  &  &   \\
+HML-Devil &  &  &  & -0.28 (-0.62) &  &  &  &  & -0.57 (-1.42) &  &   \\
+IC-RATIO &  &  &  &  &  &  &  &  &  & 0.00 (0.35) &   \\
+IC-RISK-FACTOR &  &  &  &  &  &  &  &  &  & -0.00 (-0.38) &   \\
+INNOV-LIQ &  &  &  &  &  &  &  &  &  &  & -0.35 (-0.63)  \\
+INT-LEV-RATIO-SQ &  &  &  &  &  &  &  &  &  & 25.42 (0.95) &   \\
+INT-VW-ROI &  &  &  &  &  &  &  &  &  & 0.00 (1.21) &   \\
+MKT-RF &  & 0.34* (1.71) &  &  &  &  &  &  &  &  &   \\
+MOM &  &  &  &  &  & 0.29 (0.88) &  &  &  &  &   \\
+Mkt-RF & 0.22 (1.22) &  & 0.17 (1.06) & 0.30 (1.42) & 0.33** (2.55) & 0.35 (1.57) & 0.30 (1.37) & 0.50** (2.10) & 0.28 (1.35) &  &   \\
+PEAD &  &  & 0.12 (0.68) &  &  &  &  &  &  &  &   \\
+RF & 0.05** (2.49) & 0.03 (1.51) & 0.03** (2.24) & 0.03 (1.55) &  & 0.04* (1.76) & 0.08*** (3.20) & 0.06*** (2.67) & 0.04* (1.89) &  &   \\
+RMW &  &  &  &  &  &  & 0.40** (2.06) & 0.45** (2.34) &  &  &   \\
+R-EG &  & 0.20 (1.18) &  &  &  &  &  &  &  &  &   \\
+R-IA &  & -0.21 (-1.53) &  & -0.28* (-1.74) &  &  &  &  &  &  &   \\
+R-ME &  & -0.01 (-0.05) &  &  &  &  &  &  &  &  &   \\
+R-ROE &  & 0.33* (1.68) &  & 0.36 (1.63) &  &  &  &  &  &  &   \\
+SMB & -0.02 (-0.12) &  &  & -0.09 (-0.51) &  & -0.01 (-0.06) & -0.26 (-1.29) & -0.29 (-1.46) &  &  &   \\
+SMB-AQR &  &  &  &  &  &  &  &  & 0.06 (0.38) &  &   \\
+TRADED-LIQ &  &  &  &  &  &  &  &  &  &  & 0.46** (2.36)  \\
+UMD &  &  &  & 0.17 (0.59) &  &  &  & 0.56* (1.76) & 0.38 (1.24) &  &   \\
+Constant ($\lambda_0$) & 0.86*** (4.72) & 0.74*** (3.78) & 0.84*** (5.10) & 0.77*** (3.81) & 0.77*** (5.48) & 0.77*** (3.72) & 0.76*** (3.31) & 0.60** (2.52) & 0.82*** (4.31) & 0.91*** (7.89) & 1.10*** (7.77)  \\
+\midrule
+Adj. $R^2_{CS}$ & 0.18 & 0.10 & 0.05 & 0.08 & 0.11 & 0.18 & 0.24 & 0.28 & 0.20 & 0.11 & 0.05  \\
+Event Months & 209 & 202 & 194 & 202 & 209 & 209 & 209 & 209 & 209 & 205 & 202  \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table reports Fama-MacBeth regression results using narrative ambiguity constructed by the \textbf{QWEN3-0.6B} model. Coefficients are in percentage.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
+\end{landscape}

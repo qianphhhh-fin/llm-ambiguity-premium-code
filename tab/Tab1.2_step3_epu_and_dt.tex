@@ -1,0 +1,32 @@
+
+\begin{table}[h!]
+\centering
+\caption{The Horse Race: Narrative Ambiguity vs. Economic Policy Uncertainty}
+\label{tab:epu_horse_race}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{3}{c}{Dependent Variable: $\Delta \text{VIX}_{t}$} \\
+\cmidrule(lr){2-4}
+Variable & (1) & (2) & (3) \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel A: Independent Shocks}} \\
+    \hspace{1em}Narrative Shock ($\Delta D_t$) & 0.171 & & 0.173 \\
+         & ((0.75)) & & ((0.75)) \\
+    \hspace{1em}EPU Shock ($\Delta \text{EPU}_t$) & & -0.332 & -0.333 \\
+         & & (-0.91) & (-0.91) \\
+
+\midrule
+Constant & Yes & Yes & Yes \\
+Observations & 218 & 218 & 218 \\
+Adj. $R^2$ & -0.000 & 0.012 & 0.012 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel B: Correlation Analysis}} \\
+    \hspace{1em}Corr($\Delta D_t$, $\Delta \text{EPU}_t$) & \multicolumn{3}{c}{0.005} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table compares the explanatory power of Narrative Ambiguity shocks ($\Delta D_t$) and Economic Policy Uncertainty shocks ($\Delta \text{EPU}_t$) on VIX changes. Both independent variables are standardized to facilitate comparison. EPU data is from Baker, Bloom, and Davis (2016). Newey-West standard errors are used.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

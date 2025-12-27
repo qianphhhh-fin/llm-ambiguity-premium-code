@@ -1,0 +1,36 @@
+
+\begin{table}[h!]
+\centering
+\caption{Narrative Ambiguity vs. Traditional Textual Metrics}
+\label{tab:textual_sentiment}
+\begin{threeparttable}
+\begin{tabular}{lcc}
+\toprule
+ & \multicolumn{1}{c}{Orthogonality Test} & \multicolumn{1}{c}{VIX Explanation} \\
+ & Dep. Var: $\Delta D_t$ & Dep. Var: $\Delta \text{VIX}_t$ \\
+\cmidrule(lr){2-2} \cmidrule(lr){3-3}
+Variable & (1) & (2) \\
+\midrule
+\multicolumn{3}{l}{\textbf{Panel A: Regression Analysis}} \\
+    \hspace{1em}Narrative Shock ($\Delta D_t$) & & 0.671 \\
+         & & (1.22) \\
+\addlinespace
+    \hspace{1em}LM Net Tone ($\Delta \text{Tone}_t$) & 0.148** & -0.706* \\
+         & (1.97) & (-1.95) \\
+\addlinespace
+    \hspace{1em}LM Uncertainty ($\Delta \text{LM\_Unc}_t$) & -0.136 & 0.475 \\
+         & (-1.33) & (1.08) \\
+\midrule
+Adj. $R^2$ & 0.029 & 0.011 \\
+Observations & 219 & 219 \\
+\midrule
+\multicolumn{3}{l}{\textbf{Panel B: Correlation with $\Delta D_t$}} \\
+    \hspace{1em}Corr w/ $\Delta \text{Tone}_t$ & \multicolumn{2}{c}{0.140} \\
+    \hspace{1em}Corr w/ $\Delta \text{LM\_Unc}_t$ & \multicolumn{2}{c}{-0.128} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table distinguishes the LLM-based Narrative Ambiguity ($D_t$) from traditional dictionary-based textual metrics constructed using the Loughran-McDonald (2011) Master Dictionary. Column (1) regresses $\Delta D_t$ on changes in LM Tone and LM Uncertainty to test for redundancy. Column (2) runs a horse race to explain VIX changes. All variables are standardized. Newey-West standard errors (1 lag) are used.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

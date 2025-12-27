@@ -1,0 +1,31 @@
+
+\begin{table}[h!]
+\centering
+\caption{Narrative Ambiguity vs. Real Economic Uncertainty (JLN)}
+\label{tab:jln_horse_race}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{3}{c}{Dependent Variable: $\Delta \text{VIX}_{t}$} \\
+\cmidrule(lr){2-4}
+Variable & (1) & (2) & (3) \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel A: Regression Analysis}} \\
+    \hspace{1em}Narrative Shock ($\Delta D_t$) & 0.176 & & 0.166 \\
+         & (0.76) & & (0.70) \\
+    \hspace{1em}Real Uncertainty Shock ($\Delta \text{JLN}_t$) & & -0.363 & -0.359 \\
+         & & (-1.14) & (-1.11) \\
+\midrule
+Constant & Yes & Yes & Yes \\
+Observations & 216 & 216 & 216 \\
+Adj. $R^2$ & -0.000 & 0.015 & 0.015 \\
+\midrule
+\multicolumn{4}{l}{\textbf{Panel B: Orthogonality Check}} \\
+    \hspace{1em}Corr($\Delta D_t$, $\Delta \text{JLN}_t$) & \multicolumn{3}{c}{-0.027} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table investigates whether narrative ambiguity is distinct from fundamental economic uncertainty. Real Economic Uncertainty (JLN) is the 1-month ahead uncertainty index in real economic activity constructed by Jurado, Ludvigson, and Ng (2015). Both independent variables are standardized. Newey-West standard errors (1 lag) are used.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

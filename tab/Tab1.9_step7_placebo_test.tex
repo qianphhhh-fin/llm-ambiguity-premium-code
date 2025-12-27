@@ -1,0 +1,28 @@
+
+\begin{table}[h!]
+\centering
+\caption{Placebo Test: Predictive Power of LLM on Future Returns}
+\label{tab:placebo_test}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{3}{c}{Dependent Variable: Realized S\&P 500 Returns (\%)} \\
+\cmidrule(lr){2-4}
+ & (1) & (2) & (3) \\
+Variable & Daily ($t+1$) & Weekly ($t+5$) & Monthly ($t+20$) \\
+\midrule
+LLM Predicted Return & 0.370 & 0.185 & 0.035 \\
+ & (1.31) & (0.84) & (0.19) \\
+\addlinespace
+Constant & -0.020 & -0.078 & 0.694* \\
+ & (-0.16) & (-0.45) & (1.95) \\
+\midrule
+Observations & 220 & 220 & 220 \\
+Adj. $R^2$ & 0.012 & 0.004 & -0.004 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table reports the results of a placebo test to check for look-ahead bias. We ask the LLM (DeepSeek-Chat) to explicitly predict the S\&P 500 returns (in percentage) for the next 1, 5, and 20 trading days based solely on the FOMC statement text. We then regress the realized returns on these LLM-predicted returns. A significant positive coefficient would indicate potential look-ahead bias (i.e., the model "knows" the future market reaction). t-statistics (in parentheses) are computed using Newey-West standard errors.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

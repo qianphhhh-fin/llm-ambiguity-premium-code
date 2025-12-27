@@ -1,0 +1,35 @@
+
+\begin{table}[h!]
+\centering
+\caption{Narrative Ambiguity and Market Fear (VIX)}
+\label{tab:vix_mechanism}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Contemporaneous} & \multicolumn{1}{c}{Predictive} \\
+ & \multicolumn{2}{c}{$\Delta \text{VIX}_{t}$} & \multicolumn{1}{c}{$\Delta \text{VIX}_{t \to t+5}$} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-4}
+Variable & (1) & (2) & (3) \\
+\midrule
+\multicolumn{4}{l}{\textit{\textbf{Panel A: OLS Regressions with Newey-West Adjustments}}} \\
+    \hspace{1em}Narrative Shock ($\Delta D_t$) & 0.171 & 0.171 & 0.056 \\
+         & (0.74) & (0.73) & (0.19) \\
+    \hspace{1em}Lagged VIX Level ($VIX_{t-1}$) &  & -0.014 &  \\
+         &  & (-0.30) &  \\
+    \hspace{1em}Constant & -0.435*** & -0.153 & -0.015 \\
+         & (-2.60) & (-0.19) & (-0.06) \\
+
+\midrule
+Observations & 218 & 218 & 218 \\
+Adj. $R^2$ & -0.000 & -0.002 & -0.004 \\
+\midrule
+\multicolumn{4}{l}{\textit{\textbf{Panel B: Granger Causality Tests (F-statistic)}}} \\
+    \hspace{1em}Null: $D_t$ does not cause VIX & \multicolumn{3}{c}{1.82 (p=0.179)} \\
+    \hspace{1em}Null: VIX does not cause $D_t$ & \multicolumn{3}{c}{0.14 (p=0.704)} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para,flushleft]
+  \item Note: This table reports the relationship between FOMC narrative ambiguity shocks ($\Delta D_t$) and changes in the VIX index. $\Delta D_t$ is standardized. t-statistics (in parentheses) are computed using Newey-West HAC standard errors with 1 lag. ***, **, and * denote significance at the 1\%, 5\%, and 10\% levels, respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
