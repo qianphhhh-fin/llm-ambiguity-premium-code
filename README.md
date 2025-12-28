@@ -1,5 +1,3 @@
-Codes for "叙事模糊性、认知稳健性与资产定价", English version submitted to JFQA.
-
 
 # Narrative Ambiguity, Cognitive Robustness, and Asset Pricing
 # 叙事模糊性、认知稳健性与资产定价
