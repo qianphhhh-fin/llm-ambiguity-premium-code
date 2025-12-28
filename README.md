@@ -8,7 +8,7 @@
 
 本仓库包含了论文 **"Narrative Ambiguity, Cognitive Robustness, and Asset Pricing"** 的官方实现代码与数据处理流程。
 
-> **仓库地址**: [https://github.com/qianphhhh-fin/llm-ambiguity-premium](https://github.com/qianphhhh-fin/llm-ambiguity-premium)
+> **论文tex仓库**: [https://github.com/qianphhhh-fin/llm-ambiguity-premium](https://github.com/qianphhhh-fin/llm-ambiguity-premium)
 
 ## 📄 摘要 (Abstract)
 
